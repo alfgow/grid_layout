@@ -1,0 +1,54 @@
+body {
+	background-color: rgb(153, 209, 234);
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	block-size: 100vh;
+}
+
+.container {
+	border: 5px solid black;
+	display: grid;
+	grid-template-columns: repeat(6, 100px);
+	grid-template-rows: repeat(6, 100px);
+}
+
+.container img {
+	max-inline-size: 100%;
+	box-sizing: border-box;
+}
+
+.tostadora {
+	border: 5px solid purple;
+	grid-row: 2/3;
+}
+
+.campana {
+	border: 5px solid black;
+	grid-row: 4/5;
+}
+
+.reloj {
+	border: 5px solid yellow;
+	grid-row: 4/5;
+	grid-column: 2/3;
+}
+
+.dios {
+	border: 5px solid green;
+	grid-column: 3/5;
+	grid-row: 2/6;
+}
+
+.boca {
+	grid-column: 5/6;
+	grid-row: 4/5;
+	border: 5px solid blue;
+}
+
+.gusano {
+	grid-column: 6/7;
+	grid-row: 2/3;
+	border: 5px solid red;
+}

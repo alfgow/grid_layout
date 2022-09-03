@@ -1,0 +1,33 @@
+.wrapper {
+	margin: auto;
+	max-inline-size: 935px;
+}
+
+.instagram img {
+	max-inline-size: 100%;
+	max-block-size: 100%;
+}
+
+.instagram {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.75rem;
+}
+
+.post {
+	border: 1px solid red;
+	aspect-ratio: 1/1;
+	overflow: hidden;
+}
+
+.post img {
+	inline-size: 100%;
+	block-size: 100%;
+	object-fit: cover;
+}
+
+@media (max-width: 735px) {
+	.instagram {
+		gap: 3px;
+	}
+}

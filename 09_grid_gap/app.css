@@ -1,0 +1,32 @@
+.container {
+	display: grid;
+	grid-template-columns: [column-1] 200px [column-2] 500px [column-end];
+	grid-template-rows: 100px 600px 75px;
+	grid-template-areas: "header header" "sidebar main" "footer footer";
+	row-gap: 10px;
+	column-gap: 5px;
+}
+
+.item {
+	border: 5px solid red;
+	counter-increment: item;
+}
+
+.item:nth-of-type(1) {
+	grid-area: header;
+}
+
+.item:nth-of-type(2) {
+	border-color: blue;
+	grid-area: sidebar;
+}
+
+.item:nth-of-type(3) {
+	border-color: green;
+	grid-area: main;
+}
+
+.item:nth-of-type(4) {
+	grid-area: footer;
+	margin-block-start: 10px;
+}

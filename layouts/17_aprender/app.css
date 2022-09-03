@@ -1,0 +1,38 @@
+.lesson {
+	font-family: system-ui;
+	display: grid;
+	grid-template-columns: 8.75rem 1fr;
+	grid-template-areas: "thumb title" "description description";
+	gap: 0.3rem;
+}
+
+.lesson-thumb {
+	grid-area: thumb;
+}
+
+.lesson-thumb img {
+	width: 100%;
+	vertical-align: middle;
+	aspect-ratio: 16/9;
+	object-fit: cover;
+}
+
+.lesson-title {
+	margin: 0;
+	grid-area: title;
+	place-self: center;
+}
+
+.lesson-description {
+	margin: 0;
+	grid-area: description;
+}
+
+@media (min-width: 768px) {
+	.lesson {
+		gap: 1rem;
+		grid-template-columns: 300px 1fr;
+		grid-template-rows: auto 1fr;
+		grid-template-areas: "thumb title" "thumb description";
+	}
+} ;

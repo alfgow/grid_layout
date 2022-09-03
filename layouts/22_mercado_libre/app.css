@@ -1,0 +1,54 @@
+body {
+	font-family: system-ui;
+	color: white;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-rows: 250px;
+	gap: 0.5rem;
+	max-inline-size: 1024px;
+	margin: auto;
+}
+
+img {
+	inline-size: 100%;
+	object-fit: cover;
+	flex: 1;
+	overflow: hidden;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 0.5rem;
+}
+
+.small {
+	background-color: purple;
+	grid-column-end: span 2;
+}
+
+.item.small::after {
+	content: "Small";
+}
+
+.medium {
+	background-color: green;
+	grid-column-end: span 4;
+}
+
+.item.medium::after {
+	content: "Medium";
+}
+
+.large {
+	background-color: royalblue;
+	grid-column-end: span 6;
+}
+
+.item.large::after {
+	content: "Large";
+}

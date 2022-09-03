@@ -1,0 +1,19 @@
+/*! Vista de listas */
+
+/* input[id="list"]:checked ~ .project-list {
+	border: 1px solid blue;
+} */
+
+input[id="list"]:checked ~ .project-list .project {
+	border: 1px solid red;
+	display: grid;
+	grid-template-columns: 50px 1fr 100px 100px;
+	gap: 1rem;
+	padding: 1rem;
+	align-items: center;
+}
+input[id="list"]:checked ~ .project-list .project img {
+	inline-size: 50px;
+	aspect-ratio: 1/1;
+	object-fit: cover;
+}
