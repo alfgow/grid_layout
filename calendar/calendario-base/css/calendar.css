@@ -1,0 +1,4 @@
+.page .calendar {
+	border: 5px solid purple;
+	grid-area: calendar;
+}

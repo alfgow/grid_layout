@@ -1,0 +1,11 @@
+@import url(./header.css);
+@import url(./sidebar.css);
+@import url(./calendar.css);
+
+.page {
+	display: grid;
+	grid-template-columns: 16.25rem 1fr;
+	grid-template-rows: 6rem 1fr;
+	block-size: 100vh;
+	grid-template-areas: "header header" "sidebar calendar";
+}

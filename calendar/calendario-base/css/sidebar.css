@@ -1,0 +1,4 @@
+.page .sidebar {
+	border: 5px solid yellow;
+	grid-area: sidebar;
+}
