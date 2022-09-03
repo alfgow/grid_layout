@@ -1,4 +1,4 @@
-.page .header {
+.header {
 	border: 5px solid blue;
 	grid-area: header;
 }
