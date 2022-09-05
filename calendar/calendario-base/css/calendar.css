@@ -1,3 +1,6 @@
+@import url(./task.css);
+@import url(./task-cell.css);
+
 .calendar {
 	color: var(--gray20);
 	padding-inline: 1.5rem;
