@@ -1,5 +1,6 @@
 @import url(./task.css);
 @import url(./task-cell.css);
+@import url(./calendar-day.css);
 
 .calendar {
 	color: var(--gray20);
@@ -23,7 +24,4 @@
 			minmax(var(--minBlockSize), var(--maxBlockSize))
 		);
 	min-block-size: 700px;
-}
-
-.calendarDay {
 }
