@@ -3,19 +3,20 @@
 @import url(./calendar-day.css);
 @import url(./timezone-cell.css);
 @import url(./hour-cell.css);
+@import url(./current-time.css);
 
 .calendar {
 	color: var(--gray20);
 	padding-inline: 1.5rem;
 	--minBlockSize: 4rem;
 	--maxBlockSize: auto;
-	--minInlineSize: 10rem;
-	--maxInlineSize: 5rem;
+	--minInlineSize: 5rem;
+	--maxInlineSize: 1fr;
+	position: relative;
 }
 
 .calendarWeek {
 	display: grid;
-	border: 5px solid purple;
 	grid-area: calendar;
 	grid-template-columns: auto repeat(
 			7,
