@@ -2,6 +2,7 @@
 @import url(./task-cell.css);
 @import url(./calendar-day.css);
 @import url(./timezone-cell.css);
+@import url(./hour-cell.css);
 
 .calendar {
 	color: var(--gray20);
