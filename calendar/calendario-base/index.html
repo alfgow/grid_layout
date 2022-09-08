@@ -12,7 +12,33 @@
 <body>
 
     <div class="page">
-        <header class="header"></header>
+        <header class="header">
+            <div class="calendarStatus">
+                <button class="button is-secondary">Hoy</button>
+                <span class="calendarStatus-navigation">
+                    <a href="#" class="button is-compact" aria-label="Semana Anterior">
+                        <i class="icon-chevron-left" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="button is-compact" aria-label="Siguiente Semana">
+                        <i class="icon-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </span>
+                <time class="calendarStatus-date" datetime="08-09-2022">08 de Septiembre</time>
+                <select class="select" name="" id="">
+                    <option value="">Semana</option>
+                    <option value="">Día</option>
+                </select>
+            </div>
+
+            <button class="button is-primary ">Botón</button>
+            <button class="button is-secondary ">Botón</button>
+            <button class="button is-rounded is-shadowed">
+                <i class="icon-plus"></i>
+                <span>Botón</span>
+            </button>
+            <button class="button is-compact "><i class="icon-plus"></i></button>
+
+        </header>
         <div class="sidebar"></div>
         <main class="calendar">
             <div class="currentTime"></div>

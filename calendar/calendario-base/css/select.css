@@ -1,0 +1,12 @@
+.select {
+	border: 1px solid var(--gray20);
+	padding-inline: 0.75rem;
+	padding-inline-end: 2rem;
+	padding-block: 0.5rem;
+	border-radius: 0.25rem;
+	font: var(--button);
+	appearance: none;
+	background-image: url(../icons/icon-down.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
