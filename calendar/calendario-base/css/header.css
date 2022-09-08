@@ -1,4 +1,31 @@
 .header {
-	border: 5px solid blue;
 	grid-area: header;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 1.5rem;
+}
+
+.header-primary {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+
+.header-logo {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	vertical-align: middle;
+}
+
+.header-secondary {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.header-secondary img,
+.header-primary img {
+	vertical-align: middle;
 }
