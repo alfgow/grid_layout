@@ -1,5 +1,4 @@
 .miniCalendar {
-	border: 1px solid red;
 	--cellSize: 1.75rem;
 	max-inline-size: 12.25rem;
 }
@@ -56,4 +55,34 @@
 .miniCalendar-monthDay.is-selected {
 	color: var(--white);
 	background-color: var(--blue10);
+}
+
+.myCalendars-header {
+	font: var(--body1-medium);
+	display: flex;
+	justify-content: space-between;
+	line-height: 1.25rem;
+	padding-block-end: 0.5rem;
+}
+
+.myCalendars-header i {
+	font-size: 1.25rem;
+}
+
+.myCalendars-container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+}
+
+.findPeople {
+	border: 1px solid var(--gray20);
+	padding-inline: 0.75rem;
+	padding-inline-start: 3rem;
+	padding-block: 0.5rem;
+	border-radius: 0.25rem;
+	font: var(--button);
+	background-image: url(../icons/icon-users.svg);
+	background-repeat: no-repeat;
+	background-position: left 1rem center;
 }

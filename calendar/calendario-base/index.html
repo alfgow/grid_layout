@@ -121,6 +121,26 @@
                     <div class="miniCalendar-monthDay is-inactive">8</div>
                 </div>
             </div>
+            <input class="findPeople" type="text" placeholder="Buscar Personas">
+            <div class="myCalendars">
+                <div class="myCalendars-header">
+                    <span>Mis Calendarios</span> <i class="icon-chevron-up"></i>
+                </div>
+                <div class="myCalendars-container">
+                    <div class="myCalendars-item">
+                        <i class="icon-check-square"></i> Alfgow
+                    </div>
+                    <div class="myCalendars-item">
+                        <i class="icon-check-square"></i> Cumpleaños
+                    </div>
+                    <div class="myCalendars-item">
+                        <i class="icon-check-square"></i> Tareas
+                    </div>
+                    <div class="myCalendars-item">
+                        <i class="icon-check-square"></i> Recordatorios
+                    </div>
+                </div>
+            </div>
         </div>
 
         <main class="calendar">
@@ -403,7 +423,59 @@
         </main>
     </div>
     </div>
+    <dialog class="modal">
+        <form class="createTask">
+            <div class="input is-outstanding">
+                <div class="input-body">
+                    <input required name="title" type="text" placeholder="Añade un Título">
+                </div>
+            </div>
+            <div class="input">
+                <i class="icon-clock"></i>
+                <div class="input-body">
+                    <input type="date" name="date" required>
+                    <input type="time" name="timeStart" required>
+                    <input type="time" name="timeEnd" required>
+                </div>
+            </div>
 
+            <div class="input">
+                <i class="icon-users"></i>
+                <div class="input-body">
+                    <input type="text" list="guests" name="guest" placeholder="Agregar Invitados" required>
+                    <datalist id="guests">
+                        <option value="Dianis"></option>
+                        <option value="Dany"></option>
+                        <option value="Regis"></option>
+                    </datalist>
+                </div>
+
+            </div>
+            <div class="input">
+                <i class="icon-gps"></i>
+                <div class="input-body">
+                    <input type="text" placeholder="Agregar Ubicacion" name="location">
+                </div>
+            </div>
+            <div class="input">
+                <i class="icon-text"></i>
+                <div class="input-body">
+                    <input type="file" multiple>
+                </div>
+            </div>
+            <div class="input">
+                <i class="icon-text"></i>
+                <div class="input-body">
+                    <textarea name="description" placeholder="Agregar Descripcion" id="" cols="30" rows="2"></textarea>
+                </div>
+            </div>
+        </form>
+        <div class="modal-actions">
+            <button class="button">Cancelar</button>
+            <button class="button is-primary">Guardar</button>
+        </div>
+    </dialog>
 </body>
+<script src="./js/app.js"></script>
 
 </html>
