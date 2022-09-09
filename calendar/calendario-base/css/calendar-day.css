@@ -7,7 +7,11 @@
 	position: sticky;
 	inset-block-start: 0;
 	border-block-end: 1px solid currentColor;
-	background-color: white;
+	background-color: var(--white);
+}
+
+.calendarDay.single {
+	align-items: flex-start;
 }
 
 .calendarDay a {

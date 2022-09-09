@@ -23,4 +23,14 @@
 body {
 	font: var(--body1-regular);
 	margin: 0;
+	color: var(--gray50);
+	background: var(--white);
 }
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--gray50: #dcfc25;
+		--gray30: white;
+		--white: #222222;
+	}
+} ;

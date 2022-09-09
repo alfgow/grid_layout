@@ -2,7 +2,6 @@
 	margin: unset;
 	padding-inline: 3rem;
 	padding-block: 1.5rem;
-	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
 	position: absolute;
@@ -17,6 +16,10 @@
 		0.0873403px 2.52442px 7.4963px rgba(0, 0, 0, 0.07);
 }
 
+.modal[open] {
+	display: flex;
+}
+
 .modal::backdrop {
 	background-color: rgb(0, 0, 0, 0.3);
 }
@@ -24,4 +27,5 @@
 .modal-actions {
 	display: flex;
 	justify-content: flex-end;
+	gap: 1.5rem;
 }

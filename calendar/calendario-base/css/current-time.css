@@ -8,6 +8,16 @@
 	z-index: 0;
 }
 
+.currentTime.current-time-day {
+	block-size: 2px;
+	background-color: var(--red10);
+	inline-size: 100vh;
+	position: absolute;
+	inset-inline-start: 70px;
+	inset-block-start: 200px;
+	z-index: 0;
+}
+
 .currentTime::before {
 	content: "";
 	display: block;

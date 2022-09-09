@@ -28,3 +28,16 @@
 		);
 	min-block-size: 700px;
 }
+
+.calendar-by-day {
+	display: grid;
+	grid-template-columns: auto minmax(
+			var(--minInlineSize),
+			var(--maxInlineSize)
+		);
+	grid-template-rows: 7.75rem repeat(
+			24,
+			minmax(var(--minBlockSize), var(--maxBlockSize))
+		);
+	min-block-size: 700px;
+}
